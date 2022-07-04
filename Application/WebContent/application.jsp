@@ -10,7 +10,6 @@
 <body>
 
 
-
 <table border = 1  width = 800 height = 200 align = "center">
 
 	<tr bgcolor = "lightgray" align = "center">
