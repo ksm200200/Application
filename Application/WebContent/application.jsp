@@ -48,9 +48,24 @@
 	<tr align = "center">
 
 		<th colspan = 2>신청기관</th>
-		<td colspan = 3><input type=text name = application_institution></td>
+		<td colspan = 3>
+			<select name="job">
+    			<option value="시/도" selected>시/도 선택</option>
+    			<option value="서울">서울특별시</option>
+    			<option value="인천">인천광역시</option>
+    			<option value="경상도">경상도</option>
+    			<option value="전라도">전라도</option>
+			</select>
+		</td>
 		<th colspan = 2>사업<br>제안기관</th>
-		<td colspan = 3><input type=text name = proposal_institution></td>
+		<td colspan = 3>
+			<select name="job">
+	    		<option value="구/군" selected>구/군 선택</option>
+	    		<option value="서울">서울특별시</option>
+	    		<option value="경기도">경기도</option>
+	    		<option value="기타">기타</option>
+			</select>
+		</td>
 
 	</tr>
 	
@@ -177,16 +192,17 @@
 	
 	<tr>
 		<th colspan = 2>가점<br>해당여부</th>
-		<td colspan = "7" height = 80><input type = checkbox>&nbsp;지역활성화 지역<br>
-						<input type = checkbox>&nbsp;시·도 교육청 교육프로그램 연계<br>
-						<input type = checkbox>&nbsp;농공단지 패키지 지원사업 선정 및 연계 여부<br>
-						<input type = checkbox>&nbsp;2021년도 지역개발사업 우수사례 지자체
+		<td colspan = "7" height = 80>
+			<input type = checkbox name = "extra points" value = "001">&nbsp;지역활성화 지역<br>
+			<input type = checkbox name = "extra points" value = "002">&nbsp;시·도 교육청 교육프로그램 연계<br>
+			<input type = checkbox name = "extra points" value = "003">&nbsp;농공단지 패키지 지원사업 선정 및 연계 여부<br>
+			<input type = checkbox name = "extra points" value = "004">&nbsp;2021년도 지역개발사업 우수사례 지자체
 		</td>
 	</tr>
 	
 	<tr>
 	
-		<th colspan = 2>사업명</td>
+		<th colspan = 2>사업명</th>
 		<td colspan = 4><textarea rows = 3 cols = 80 name = content></textarea></td>
 		<th colspan = 2>사업유형</th>
 		<td colspan = 1><input type = text></td>
@@ -205,7 +221,23 @@
 		<td colspan = 4><input type = text></td>
 		
 		<th colspan = 1>시행<br>기간</th>
-		<td  colspan = 2><input type = text></td>
+		<td  colspan = 2 align = "center">
+			<select name="시행기간">
+    		<option value="">년도</option>
+    		<option value="2022">2022</option>
+    		<option value="2023">2023</option>
+    		<option value="2024">2024</option>
+    		<option value="2025">2025</option>
+			</select>
+			~
+			<select name="시행기간">
+			<option value="">년도</option>
+    		<option value="2022">2022</option>
+    		<option value="2023">2023</option>
+    		<option value="2024">2024</option>
+    		<option value="2025">2025</option>
+			</select>
+		</td>
 	
 	</tr>
 	
