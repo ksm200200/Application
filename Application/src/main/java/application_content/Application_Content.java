@@ -1,4 +1,4 @@
-package model;
+package application_content;
 
 public class Application_Content {
 	
@@ -43,6 +43,7 @@ public class Application_Content {
 	}
 	
 	public Application_Content() {
+		super();
 		
 	}
 	
