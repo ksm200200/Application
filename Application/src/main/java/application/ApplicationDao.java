@@ -17,7 +17,7 @@ public class ApplicationDao {
 	public ApplicationDao() {
 		
 		try {
-			String dbURL = "jdbc:postgresql://localhost:8080/application";
+			String dbURL = "jdbc:postgresql://localhost:5432/application";
 			String user = "postgres";
 			String password = "1234";
 			Class.forName("com.postgresql.jdbc.Driver");
@@ -56,8 +56,10 @@ public class ApplicationDao {
 			}
 			
 		}
-		return 0;
+		return -1;
 	}
 	
-
+	
+	
+	
 }

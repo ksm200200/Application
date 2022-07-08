@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import = "application.ApplicationDao" %>
+<%@ page import = "application_content.Application_ContentDao" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,8 +32,7 @@
 
 <body>
 
-
-
+<form action="post" action = insertAction.jsp>
 <table border = 1>
 
 	<tr bgcolor = "lightgray" align = "center">
@@ -185,8 +187,8 @@
 	</tr>
 	
 	<tr height = 90>
-		<th colspan = 2>주요내용</td>
-		<td colspan = "7"><textarea rows = 3 cols = 160 name = content></textarea></td>
+		<th colspan = "2">주요내용</th>
+		<td colspan = "7"><textarea rows = 3 cols = 160 name = "maincontent"></textarea></td>
 	</tr>
 	
 	
@@ -299,9 +301,10 @@
 		<td  colspan = "7"><textarea rows = 3 cols =150 name = content></textarea></td>
 	</tr>
 	
-	
-	
 </table>
+
+<input type="submit" class = "btn btn-primary pull-right" value="제출">
+</form> 
 
 </body>
 </html>
